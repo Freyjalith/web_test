@@ -65,4 +65,55 @@ form {
 }
 
 input,
-textarea{}
+textarea {
+    padding: 15px;
+    border-radius: 3px;
+    border: none;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type='submit'] {
+    width: 200px;
+    margin: auto;
+    margin-top: 30;
+}
+
+@media screen and (max-width: 996px) {
+    .acceuil-introduction {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .acceuil-introduction div {
+        padding-right: 0;
+        align-items: center;
+        order:2;
+    }
+
+    .acceuil-introduction img {
+        order: 1;
+        margin-bottom: 200px;
+        width: 100%;
+    }
+
+    .acceuil-photos {
+        padding: 20px;
+    }
+
+    .acceuil-photos div {
+        flex-direction: column;
+    }
+
+    .section-contact {
+        padding: 50px 20px;
+    }
+
+    .form-nom-email {
+        flex-direction: column;
+        gap: 0;
+    }
+}
